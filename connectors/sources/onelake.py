@@ -80,7 +80,6 @@ class OneLakeDataSource(BaseDataSource):
         self._logger.info("Generating file system client...")
 
         try:
-            # TODO: change it for one more generic
             await self._get_directory_paths(self.configuration["data_path"])
             self._logger.info("Connection to OneLake successful")
 
