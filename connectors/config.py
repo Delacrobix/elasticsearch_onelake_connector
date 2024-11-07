@@ -103,6 +103,7 @@ def _default_config():
             "log_level": "INFO",
         },
         "sources": {
+            "onelake": "connectors.sources.onelake:OneLakeDataSource",
             "azure_blob_storage": "connectors.sources.azure_blob_storage:AzureBlobStorageDataSource",
             "box": "connectors.sources.box:BoxDataSource",
             "confluence": "connectors.sources.confluence:ConfluenceDataSource",
